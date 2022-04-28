@@ -28,9 +28,9 @@ inputs:
     required: false
     default: "."
   platform:
-    description" "Docker build platform,ef: linux/arm64|linux/arm64"
+    description" "Docker build platform,ef: linux/amd64|linux/arm64"
     required: false
-    default: ""
+    default: "linux/amd64"
 outputs:
   image_pull_url:
     description: "Image Pull Url,eg: docker pull image_pull_url"
