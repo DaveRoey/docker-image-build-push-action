@@ -7,7 +7,7 @@ docker_file=$INPUT_DOCKER_FILE
 if [[ "${docker_file}" = "" ]]; then
     docker_file="."
 fi
-docker build -t ${image_name} ${docker_file}
+docker build --platform ${platform} -t ${image_name} ${docker_file}
 docker tag ${image_name} ${image_url}
 docker push ${image_url}
 
